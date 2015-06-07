@@ -36,7 +36,7 @@ namespace MSSQLDAL
 
         public List<Item> SelectOdd(int id,int count)
         {
-            commandText = "select TOP(@cnt)  * from tabItem where itemId<@id UNION ALL select TOP(@cnt+1) * from tabItem where itemId >= @id order by itemId";
+            commandText = "select TOP(@cnt)  * from tabItem where itemId BETWEEN (@id-@cnt) AND (@id-1) UNION ALL select TOP(@cnt+1) * from tabItem where itemId >= @id order by itemId";
             commandParameters = new SqlParameter[] { new SqlParameter("@id", id), new SqlParameter("@cnt", count/2) };
             return base.Select();
         }

@@ -31,8 +31,10 @@
         <!--sidebar-->
         <div id="sidebar">
             <div id="information">
+                <%--<asp:ContentPlaceHolder runat="server" ID="sideBaeNav"></asp:ContentPlaceHolder>--%>
                 <ul id="info_ul">
-                    <li onclick="location.href='default.aspx'" style="background:url('../images/cms_li_bg.jpg') no-repeat;color:#fff;cursor:pointer">信息管理</li>
+                    <li><a href="default.aspx">信息管理</a> </li>
+                    <li><a href='columnManage.aspx'>栏目管理</a></li>
                     <li><a href="ContentManage.aspx">内容管理</a></li>
                 </ul>
             </div>

@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="内容管理" Language="C#" ValidateRequest="false" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="ContentManage.aspx.cs" Inherits="WebApplication1.Admin.ContentManage" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <script src="/Scripts/NewsManage.js"></script>
     <script src="/swfupload/swfupload.js"></script>
@@ -52,12 +51,11 @@
             });
         }
     </script>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_hea">
         <div id="content_hea_o">
-            内容管理 / 作品管理 
+            信息管理  / 内容管理
         </div>
         </div>
     <div id="addcontent">

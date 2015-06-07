@@ -29,7 +29,7 @@ namespace WebApplication1.Admin
             if (helper.Update(u))
             {
                 Session.Abandon();
-                Response.Write("<script>alert('密码修改成功！请重新登录~~);location.href='/Admin/login.html'</script>");
+                Response.Write("<script>alert('密码修改成功！请重新登录~~');location.href='/Admin/login.html'</script>");
             }
             else
             {

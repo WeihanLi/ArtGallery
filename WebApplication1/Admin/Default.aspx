@@ -21,7 +21,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="content_hea">
             <div id="content_hea_o">
-                信息管理 / 栏目管理
+                信息管理
             </div>
             </div>
             <div id="content_column">
