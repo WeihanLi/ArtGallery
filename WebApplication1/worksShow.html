@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>人民艺术展览馆</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+    <link rel="stylesheet" type="text/css" href="css/page1.css">
+
+    <!-- JavaScripts -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/modernizr.min.js"></script>
+
+</head>
+<body>
+    <header class="site-header" id="top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="logo-wrapper">
+                            <a href="#templatemo">
+                                <img src="" class="imgBlock">
+                                <img src="images/logoS.png" alt="" height="40">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right relative">
+                            <li>
+                                <span></span><a href="/index.html#top" class="home">首页</a>
+                            </li>
+                            <li>
+                                <span></span><a href="/WorksShow.html?t=1" class="about">山水</a>
+                            </li>
+                            <li>
+                                <span></span><a href="/WorksShow.html?t=2" class="portfolio">人物</a>
+                            </li>
+                            <li>
+                                <span></span><a href="/WorksShow.html?t=3" class="map">花鸟</a>
+                            </li>
+                            <li>
+                                <span></span><a href="#" class="weixin" onmouseover="showScanimg()" onmouseout="hideScanimg()">微信</a>
+                            </li>
+                            <img src="images/scanimg.png" height="128" width="128" alt="二维码" id="scanimg">
+                            <li>
+                                <span></span><a href="#" class="contact" onmouseover="contactUs()" onmouseout="nocontactUs()">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <div id="container">
+
+        </div>
+        <div id="loadMore" style="clear:both;cursor:pointer;width:100px;height:40px;margin:15px auto;text-align:center;color:#666;font-size:14px;font-weight:900;line-height:40px;background:#f5f5f5;border:1px solid #fff;border-radius:5px;" onclick="load()">点击查看更多</div>
+        <div id="friendLink">
+            <h4>友情链接</h4>
+            <ul>
+                <li><a href="http://www.peoplearts.cn/">人民艺术网</a></li>
+                <li><a href="http://www.people.com.cn/">人民网</a></li>
+                <li><a href="http://www.artron.net/">雅昌艺术网</a></li>
+                <li><a href="http://www.99ys.com/">99艺术网</a></li>
+                <li><a href="http://collection.sina.com.cn/">新浪收藏</a></li>
+                <li><a href="http://cul.sohu.com/s2009/shoucang/">搜狐文化频道</a></li>
+                <li><a href="http://book.163.com/special/uctionlist/">网易艺术网</a></li>
+                <li><a href="http://www.artx.cn/">艺术中国</a></li>
+                <li><a href="http://finance.qq.com/money/collection/">腾讯收藏</a></li>
+                <li><a href="http://www.chnart.com/">中国艺术网</a></li>
+                <li><a href="http://www.cguardian.com/">嘉德拍卖</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            邮箱：123456789@163.com&nbsp;&nbsp;&nbsp;&nbsp;联系电话：12345678901<br>
+            人民艺术展览馆网站是人民艺术唯一的官方艺术品展示平台，定位于全艺术主流新媒体，是人民艺术《人民艺术杂志》的重要应用平台，<br>
+            汇集了国内最优秀的艺术作品和最具影响力的艺术家，着力打造中国最具影响力的艺术品门户专业网站。<br>
+            版权所有：版权所有者&nbsp;&nbsp;&nbsp;&nbsp;备案号：100100001000100
+        </div>
+    </div>
+
+
+    <div id="contactFather">
+
+        <div id="contact">
+            <a href="" onclick="closeContact()" id="closeContact"><div>X</div></a>
+            <div id="contactSon">
+                <h3 style="color:#fff;"><strong>联系方式：</strong></h3>
+                <h4 style="color:#ddd;">1234567891</h4>
+                <h3 style="color:#fff;"><strong>邮箱：</strong></h3>
+                <h4 style="color:#ddd;">1234567891@163.com</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function contactUs(){
+                var showThisBox = document.getElementById('contactFather');
+                showThisBox.style.display = "inline";
+        }
+        function nocontactUs(){
+            var showThisBox = document.getElementById('contactFather');
+            showThisBox.style.display = "none";
+        }
+        function showScanimg(){
+            var showImg = document.getElementById('scanimg');
+            showImg.style.display = "inline";
+        }
+        function hideScanimg(){
+            var showImg = document.getElementById('scanimg');
+            showImg.style.display = "none";
+        }
+        var pageSize = 3, pageIndex = 0;
+        function getRequestParam() {
+            var href = window.location.href;
+            var index = href.lastIndexOf("=");
+            if (index > -1) {
+                var t = href.substring(index + 1, href.length);
+                return t;
+            } else {
+                return -1;
+            }
+        }
+        function load() {
+            var images = '';
+            //pageIndex = pageIndex + 1;
+            pageIndex += 1;
+            $.post("/Handlers/LoadImagesHandler.ashx", { "pIndex": pageIndex, "pSize": pageSize, "order": 1,"type":getRequestParam() }, function (data) {
+                if (data != 'error') {
+                    var array = JSON.parse(data);
+                    for (var i = 0; i < array.length; i++) {
+                        images += '<div class="showBox"><div class="image"><a href='+array[i].ItemPath+'> <img src="" alt="" class="imgBlock"><img src="/Upload/thumb/'+array[i].ItemImagePath+'"  alt='+array[i].ItemName+'/></div></a>\
+				    <div class="picName">'+array[i].ItemName+'<br><span>'+array[i].ItemId+'</span></div>\
+				    <div class="painter"><h2>'+array[i].ItemAuthor+'</h2><p>'+array[i].ItemDesc+'</p></div></div>';
+                    }
+                    $("#container").append(images);
+                    if (array.length<pageSize) {
+                        $("#loadMore").css("display", "none");
+                    }
+                }
+                else {
+                    alert('图片加载出错 -_-');
+                }
+            });
+        }
+        //alert(getRequestParam());
+        load();
+    </script>
+</body>
+</html>

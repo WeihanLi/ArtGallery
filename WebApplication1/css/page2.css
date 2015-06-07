@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+*{margin:0;padding:0;}
+body{width:100%;height:auto;margin:0;padding:0;background:url(../images/mainBg.jpg);color: #444;font:14px/1.2 "\5B8B\4F53","\65B0\5B8B\4F53",Tahoma,"Hiragino Sans Gb","Microsoft YaHei";text-decoration: none;vertical-align: middle;}
+a,a:hover,a:active{text-decoration: none;}
+#main{max-width: 1280px;height: auto;margin:0 auto;padding-top:150px;}
+#header{width:100%;height: 150px;background-image: url(../images/logo.png);background-repeat: no-repeat;background-position: center;}
+#header ul{list-style: none;padding-top: 48px;}
+#header a{display:inline;float:left;width:50px;line-height: 24px;color:#444;}
+#icoHome{padding-left:24px;background: url(../images/icon-home.png) no-repeat;}
+#icoConnect{padding-left:24px;background: url(../images/icon-phone.png) no-repeat;}
+#icoWeixin{padding-left:24px;background: url(../images/icon-weixin.png) no-repeat;}
+/*container begin*/
+#container{width:100%;}
+.showBox{float:left;width:100%;height:auto;margin:0 auto;border:1px solid #aaa;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+.image{position: relative; ;max-width:960px;margin:35px auto;text-align: center;overflow: hidden;background: url(../images/boxBg.jpg);border-radius: 10px;}
+.image img{margin:0 auto;vertical-align: middle;}
+.imgBlock{display: none;width:0;height: 100%;margin:0;padding:0;overflow: hidden;border-width: 0;}
+.picName{max-width: 1280px;height:85px;margin: 0 auto; text-align: center;font-size: 24px;font-weight: 900;line-height: 85px;border-bottom: 1px solid #aaa;}
+.picName span{position: relative;top:-67px;color: #aaa;font-size: 12px;font-weight: 100;line-height: 14px;}
+.painter{max-width:960px;height: auto;margin:0 auto;padding-top: 25px;padding-bottom: 25px;overflow: hidden;}
+.painter h2{line-height: 1.5em;}
+#zan{clear: both; ;text-align: center;width: 100%;height: 80px;}
+#zan img{display: inline-block;vertical-align: middle;}
+.jiathis_style{width: 200px;margin: 15px auto;}
+#imgPlay{clear:both;width:100%;max-width:1280px;overflow: hidden;}
+#imgPlay img{display: inline-block;margin:0 auto;vertical-align: middle;}
+.playBox{float: left;width:142px;height: auto;margin-top: 15px;margin-bottom:15px;padding:0;}
+.playBoxTop{width:118px;height:112px;margin:0 auto;border:1px solid #aaa;border-radius: 5px;box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+.playBox p{width:100%;margin-top: 10px;font-size: 14px;text-align: center;}
+.playBox span{font-size:12px;text-align: center;}
+.playBox:hover{padding-top:15px;}
+#currentBox{padding-top:15px; ;/*border-width:1px 1px 2px 1px;border-style: solid;border-color: #aaa;border-radius: 8px;*/ }
+#footer{float:left;width:100%;height: auto;padding: 24px 0; text-align: center;line-height: 1.5em;border-top: 1px solid #aaa;}
+.blackBox{position:absolute;top:-100px; ;width:100%;height:100px;padding:10px 25px;color:#fff;text-align: left; background: rgba(0,0,0,0.6);}
+.blackBoxFather{position:relative;width: 100%;}
+.blackBox span{font-size:24px;float: left;}
+.blackBox p{font-size:14px;float: left;}
+#clickBox{display: none;}
+#leftClick{position: absolute ;top:50%;font-size: 64px;font-weight: 900 ;height:3em;padding:0 10px;color: #fff;float: left;}
+#rightClick{position: absolute ;top:50%;right:0; ;font-size: 64px;font-weight: 900 ;height:3em;padding:0 10px;color: #fff;float: right;}
+.image:hover #leftclick,.image:hover #rightclick{z-index: 999;}
+#contactFather{z-index: 999;display:none;position: fixed;margin:auto;}
+#contact{position: fixed;width:480px;height:300px;top:50%;left:50%;margin-top: -150px;margin-left: -240px;padding-top:15px; background-color: none;text-align: center;border:1px solid #ccc;border-radius: 10px;}
+#contactSon{width: 95%;height: 95%;margin:0 auto;padding-top:50px;background: rgba(0,0,0,0.6);box-shadow:0 0 30px rgba(0,0,0,0.5);}
+#closeContact{float:right;width: 20px;height: 20px;margin-right:15px;margin-top:5px;border:0;color:#333;font-family: "arial","verdana","lucida grande","times new roman" ;border-radius: 10px;background: #fff;}
+#scanimg{display: none;position: absolute;left:218px;top:60px;}
+.relative{position: relative;}
+#gallery{height:179px;margin:0 auto;}
+.playBoxTop a{width: 118px;height: 112px;text-align: center;display: inline-block;overflow: hidden;}

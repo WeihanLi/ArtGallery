@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebApplication1.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>后台管理</title>
+    <link href="../styles/cms.css" type="text/css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/login.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div id="wraper">
+    <div id="wrap">
+        <!--header-->
+        <div id="header">
+            <div id="header_logo" onclick="location.href='Default.aspx'"></div>
+            <div id="header_user">欢迎你,管理员 
+                <select name="oper" onchange="Operate(this.value)">
+                    <option selected="selected">请选择操作</option>
+                    <option value="1">修改密码 </option>
+                    <option value="-1">退出登录</option>
+                </select>
+<%--  <input type="button" name="logout" style="background:#edeaea;width:80px;height:30px;border:1px #c8c7cc solid;border-radius:5px;" id="logout" onclick="logOut()" value="退出登录" />--%>
+            </div>
+        </div>
+        <!--header-->
+        <!--sidebar-->
+        <div id="sidebar">
+            <div id="information">
+                <ul id="info_ul">
+                    <li onclick="location.href='default.aspx'" style="background:url('../images/cms_li_bg.jpg') no-repeat;color:#fff;cursor:pointer">信息管理</li>
+                    <li><a href="ContentManage.aspx">内容管理</a></li>
+                </ul>
+            </div>
+            <div id="user_manage"><a href="UserManage.aspx">管理员管理</a></div>
+        </div>
+        <!--sidebar-->
+        <!--content-->
+        <div id="content">
+            <form runat="server">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" EnableViewState="false"></asp:ContentPlaceHolder>
+            </form>
+        </div>
+        <!--content-->
+        <div style="clear:both;"></div>
+        <div id="footer">
+            <div id="foot">
+                <p class="p_top">河南理工大学 明德网管理中心</p>
+                <p class="p_bottom">版权所有 河南理工大学 中国 河南焦作 高新区 世纪路2001号 [454000]  </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

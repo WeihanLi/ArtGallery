@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{position: relative;width:100%;height:auto;margin:0;padding:0;background:url(../images/mainBg.jpg);color: #444;font:14px/1.2 "\5B8B\4F53","\65B0\5B8B\4F53",Tahoma,"Hiragino Sans Gb","Microsoft YaHei";text-decoration: none;vertical-align: middle;}
+a,a:hover,a:active{text-decoration: none;}
+#main{max-width: 1280px;height: auto;margin:0 auto;padding-top:150px;}
+#header{width:100%;height: 150px;background-image: url(../images/logo.png);background-repeat: no-repeat;background-position: center;}
+#header ul{list-style: none;padding-top: 48px;}
+#header a{display:inline;float:left;width:50px;line-height: 24px;color:#444;}
+/*container begin*/
+#container{width:100%;}
+.showBox{float:left;width:410px;height:644px;margin:0 7px 22px;border:1px solid #aaa;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+/*.showBox2{float:left;width:410px;height:644px;margin:0 22px 22px;border:1px solid #aaa;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.5);}*/
+.image{width:408px;height:408px;margin:0 auto;text-align: center;overflow: hidden;background: url(../images/boxBg.jpg);border-radius: 10px;}
+.image img{display:inline-block;margin:0 auto;vertical-align: middle;}
+.imgBlock{display:none;width:0;height: 100%;overflow: hidden;}
+.picName{width: 400px;height:85px;margin: 0 auto; text-align: center;font-size: 24px;font-weight: 900;line-height: 85px;border-bottom: 1px solid #aaa;}
+.picName span{position: relative;top:-67px;color: #aaa;font-size: 12px;font-weight: 100;line-height: 14px;}
+.painter{width:360px;height: auto;margin:0 auto;padding-top: 25px;padding-bottom: 10px;overflow: hidden;}
+#friendLink{max-width: 1230px;height: auto;padding:25px 25px 50px 25px;clear: both;border-top: 1px solid #aaa;border-bottom: 1px solid #aaa;}
+#friendLink ul{list-style: none;margin-top: 15px;}
+#friendLink li{float: left;margin-right: 15px;}
+#friendLink a{color:#444;}
+#friendLink a:hover{color: #551A8B;}
+#footer{width:100%;height: auto;padding: 25px 0; text-align: center;line-height: 1.5em;}
+#contactFather{z-index: 999;display:none;position: fixed;margin:auto;}
+#contact{position: fixed;width:480px;height:300px;top:50%;left:50%;margin-top: -150px;margin-left: -240px;padding-top:15px; background-color: none;text-align: center;border:1px solid #ccc;border-radius: 10px;}
+#contactSon{width: 95%;height: 95%;margin:0 auto;padding-top:50px;background: rgba(0,0,0,0.6);box-shadow:0 0 30px rgba(0,0,0,0.5);}
+#closeContact{float:right;width: 20px;height: 20px;margin-right:15px;margin-top:5px;border:0;color:#333;font-family: "arial","verdana","lucida grande","times new roman" ;border-radius: 10px;background: #fff;}
+#scanimg{display: none;position: absolute;left:218px;top:60px;}
+.relative{position: relative;}
