@@ -91,7 +91,7 @@ namespace MSSQLDAL
 
         public List<Item> SelectPageList(int pageIndex,bool isAsc, int pageSize)
         {
-            commandText = "select top(@pSize) * from tabItem where itemId not in (select top(@pIndex*@pSize) itemId from tabItem) order by itemId";
+            commandText = "select TOP(@pSize) * from tabItem where itemId not in (select top(@pIndex*@pSize) itemId from tabItem) order by itemId";
             if (isAsc==false)
             {
                 commandText += " DESC";
@@ -127,7 +127,7 @@ namespace MSSQLDAL
 
         public List<Item> SelectPageListByCategory(int cId, int pageIndex,int pageSize, bool isAsc)
         {
-            commandText = "select top(@pSize) * from tabItem where itemId not in (select top(@pIndex*@pSize) itemId from tabItem) AND itemTypeId=@tId order by itemId";
+            commandText = "select TOP(@pSize) * from tabItem where itemId not in (select TOP(@pIndex*@pSize) itemId from tabItem where itemTypeId=@tId) AND itemTypeId=@tId order by itemId";
             if (isAsc == false)
             {
                 commandText += " DESC";
