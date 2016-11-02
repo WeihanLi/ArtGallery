@@ -188,3 +188,6 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.vs
+/WebApplication1/Upload
+/WebApplication1/Properties/PublishProfiles
