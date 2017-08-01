@@ -7,10 +7,10 @@ namespace BLL
     {
         protected BaseDAL<T> BLLHelper = null;
 
-        //public BaseBLL()
-        //{
-        //    Init();
-        //}
+        public BaseBLL()
+        {
+            Init();
+        }
 
         protected abstract void Init();
 
